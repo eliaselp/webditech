@@ -116,12 +116,10 @@ STATIC_ROOT = BASE_DIR / 'colectstatics'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-SECURE_SSL_REDIRECT = True
+
 
 
 CSRF_COOKIE_SECURE = True # O True si usas HTTPS
 CSRF_TRUSTED_ORIGINS = ['https://wemautomations.ddns.net','http://localhost:8000']
 
 
-CSRF_COOKIE_SECURE = True # O True si usas HTTPS
-CSRF_TRUSTED_ORIGINS = ['https://wemautomations.ddns.net','http://localhost:8000','http://localhost']
