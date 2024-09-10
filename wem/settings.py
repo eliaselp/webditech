@@ -116,6 +116,8 @@ STATIC_ROOT = BASE_DIR / 'colectstatics'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+SECURE_SSL_REDIRECT = True
+
 
 
 CSRF_COOKIE_SECURE = True # O True si usas HTTPS
