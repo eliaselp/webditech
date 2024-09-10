@@ -114,3 +114,9 @@ STATIC_ROOT = BASE_DIR / 'colectstatics'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+CSRF_COOKIE_SECURE = True # O True si usas HTTPS
+CSRF_TRUSTED_ORIGINS = ['https://wemautomations.ddns.net','http://localhost:8000','http://localhost']
