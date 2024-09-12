@@ -4,12 +4,11 @@ from App import models
 import re
 import json
 import time
-from translate import Translator
+from mtranslate import translate
 
-
-def traducir_texto(translator,texto):
-    translation = translator.translate(texto)
-    return translation
+def traducir_texto(texto,idioma):
+    translated_text = translate(texto, idioma)
+    return translated_text
 
 def traducir_diccionario(diccionario, codigo_idioma_destino):
     translator = Translator(to_lang=codigo_idioma_destino)
@@ -19,7 +18,7 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
                 diccionario[clave] = traducir_texto(translator, valor)
-                print(f"{clave} ===>> {diccionario[clave]}")
+                print(diccionario[clave])
         return diccionario
     return traducir_valores(diccionario.copy())
 
