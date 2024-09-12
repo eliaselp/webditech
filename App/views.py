@@ -3,12 +3,44 @@ from django.views import View
 from App import models
 import re
 import json
-import time
-from mtranslate import translate
 
+'''
+from mtranslate import translate
 def traducir_texto(texto,idioma):
     translated_text = translate(texto, idioma)
     return translated_text
+'''
+'''
+from deep_translator import MyMemoryTranslator
+def traducir_texto(texto,idioma):
+    # Traducir del inglés al español
+    translator = MyMemoryTranslator(source='en', target=idioma)
+    translated_text = translator.translate(texto)
+    return translated_text
+'''
+import argostranslate.package
+import argostranslate.translate
+def traducir_texto(texto, codigo_idioma_origen, codigo_idioma_destino):
+    # Actualizar el índice de paquetes y obtener los paquetes disponibles
+    argostranslate.package.update_package_index()
+    available_packages = argostranslate.package.get_available_packages()
+    # Buscar el paquete de traducción adecuado
+    package_to_install = next(
+        filter(
+            lambda x: x.from_code == codigo_idioma_origen and x.to_code == codigo_idioma_destino,
+            available_packages
+        ),
+        None
+    )
+    # Instalar el paquete si no está ya instalado
+    if package_to_install:
+        argostranslate.package.install_from_path(package_to_install.download())
+    # Traducir el texto
+    translated_text = argostranslate.translate.translate(texto, codigo_idioma_origen, codigo_idioma_destino)
+    return translated_text
+
+
+
 
 def traducir_diccionario(diccionario, codigo_idioma_destino):
     def traducir_valores(diccionario):
@@ -16,7 +48,7 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
             if isinstance(valor, dict):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
-                diccionario[clave] = traducir_texto(valor, codigo_idioma_destino)
+                diccionario[clave] = traducir_texto(valor,'en',codigo_idioma_destino=codigo_idioma_destino)
                 print(diccionario[clave])
         return diccionario
     return traducir_valores(diccionario.copy())
@@ -52,6 +84,7 @@ def json_string_a_diccionario(json_string):
 
 class Index(View):
     def get(self, request):
+        print(">> Inicio la vista Index")
         contenido = {
             'navbar':{
                 'home':"Start",
