@@ -211,12 +211,12 @@ class Index(View):
                 },
                 'elias':{
                     'nombre':"Elías Eduardo Liranza Pérez",
-                    'cargo':"Founder . CEO",
+                    'cargo':"Founder - CEO",
                     'p':"Cybersecurity Engineer, Fullstack Developer, and Entrepreneur."
                 },
                 'melanie':{
                     'nombre':"Melanie Tamayo Casademut",
-                    'cargo':"Founder . Director of Digital Marketing",
+                    'cargo':"Founder - Director of Digital Marketing",
                     'p':"Bachelor in Tourism, Community Manager, Specialist in Digital Marketing, Content Creator, Entrepreneur"
                 }
             },
