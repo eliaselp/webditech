@@ -16,6 +16,7 @@ def traducir_texto(traductor,texto, codigo_idioma_destino):
             solve = True
         except Exception as e:
             print(str(e))
+            traductor = Translator()
             time.sleep(1)
     return traduccion.text
 
