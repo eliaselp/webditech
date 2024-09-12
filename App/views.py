@@ -229,11 +229,6 @@ class Index(View):
                     'h2':'We Are Very Good In Boosting Your Businesses',
                     'p':'Boost your business with our web development, process automation, and digital marketing services, designed to maximize your growth and efficiency!',
                 },
-                'form':{
-                    'span':"Request",
-                    'h4':"Let's Request a Call Back",
-                    "boton":"Sumbit",
-                }
             },
             'footer':{
                 'h3':"Contact Us",
