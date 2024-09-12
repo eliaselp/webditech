@@ -23,7 +23,7 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
                 diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
-                print(f"{clave} ===>> {diccionario[clave]})
+                print(f"{clave} ===>> {diccionario[clave]}")
         return diccionario
     return traducir_valores(diccionario.copy())
 
@@ -226,11 +226,6 @@ class Index(View):
                     'h2':'We Are Very Good In Boosting Your Businesses',
                     'p':'Boost your business with our web development, process automation, and digital marketing services, designed to maximize your growth and efficiency!',
                 },
-            },
-            'footer':{
-                'h3':"Contact Us",
-                'p':'Without barriers or limitations. We are here to help you reach your full potential.',
-                'c':"All Right Reserved Design By WEMAutomations",
             }
         }
         # Obtener la cabecera 'Accept-Language'
