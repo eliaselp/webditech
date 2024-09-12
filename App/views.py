@@ -8,7 +8,14 @@ from googletrans import Translator
 
 
 def traducir_texto(traductor,texto, codigo_idioma_destino):
-    traduccion = traductor.translate(texto, dest=codigo_idioma_destino)
+    solve = False
+    while solve==False
+        try:
+            traduccion = traductor.translate(texto, dest=codigo_idioma_destino)
+            solve = True
+        except Exception as e:
+            print(str(e))
+            time.sleep(1)
     return traduccion.text
 
 
@@ -20,7 +27,6 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
                 diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
-                solve=True
                 print(diccionario[clave])
         return diccionario
     return traducir_valores(diccionario.copy())
