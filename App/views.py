@@ -233,11 +233,6 @@ class Index(View):
                     'span':"Request",
                     'h4':"Let's Request a Call Back",
                     "boton":"Sumbit",
-
-                    'nombre':"Your Name",
-                    'email':"Your Email",
-                    "phone":"Your Number",
-                    'mensaje':"Your Messege",
                 }
             },
             'footer':{
