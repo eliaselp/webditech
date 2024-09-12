@@ -11,13 +11,12 @@ def traducir_texto(texto,idioma):
     return translated_text
 
 def traducir_diccionario(diccionario, codigo_idioma_destino):
-    translator = Translator(to_lang=codigo_idioma_destino)
     def traducir_valores(diccionario):
         for clave, valor in diccionario.items():
             if isinstance(valor, dict):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
-                diccionario[clave] = traducir_texto(translator, valor)
+                diccionario[clave] = traducir_texto(valor, codigo_idioma_destino)
                 print(diccionario[clave])
         return diccionario
     return traducir_valores(diccionario.copy())
