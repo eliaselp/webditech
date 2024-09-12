@@ -19,13 +19,9 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
             if isinstance(valor, dict):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
-                solve = False
-                while solve == False:
-                    try:
-                        diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
-                        solve=True
-                    except TypeError:
-                        pass
+                diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
+                solve=True
+                print(diccionario[clave])
         return diccionario
     return traducir_valores(diccionario.copy())
 
@@ -213,12 +209,12 @@ class Index(View):
                 },
                 'elias':{
                     'nombre':"Elías Eduardo Liranza Pérez",
-                    'cargo':"Founder - CEO",
+                    'cargo':"Founder . CEO",
                     'p':"Cybersecurity Engineer, Fullstack Developer, and Entrepreneur."
                 },
                 'melanie':{
                     'nombre':"Melanie Tamayo Casademut",
-                    'cargo':"Founder - Director of Digital Marketing",
+                    'cargo':"Founder . Director of Digital Marketing",
                     'p':"Bachelor in Tourism, Community Manager, Specialist in Digital Marketing, Content Creator, Entrepreneur"
                 }
             },
