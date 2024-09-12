@@ -222,6 +222,21 @@ class Index(View):
                     'h2':'We Are Very Good In Boosting Your Businesses',
                     'p':'Boost your business with our web development, process automation, and digital marketing services, designed to maximize your growth and efficiency!',
                 },
+                'form':{
+                    'span':"Request",
+                    'h4':"Let's Request a Call Back",
+                    "boton":"Sumbit",
+
+                    'nombre':"Your Name",
+                    'email':"Your Email",
+                    "phone":"Your Number",
+                    'mensaje':"Your Messege",
+                }
+            },
+            'footer':{
+                'h3':"Contact Us",
+                'p':'Without barriers or limitations, we are here to help you reach your full potential.',
+                'c':"All Right Reserved Design By WEMAutomations",
             }
         }
         # Obtener la cabecera 'Accept-Language'
