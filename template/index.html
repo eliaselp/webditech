@@ -228,16 +228,18 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="page-scroll active" href="../../../../../../../../../../../../">Home</a>
+                                    <a class="page-scroll active" href="#">
+                                        {{contenido.navbar.home}}
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="page-scroll" href="#service_section">
-                                        Services
+                                        {{contenido.navbar.services}}
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="page-scroll" href="#our_team">
-                                        Our Team
+                                        {{contenido.navbar.team}}
                                     </a>
                                 </li>
                                 <!--
@@ -258,7 +260,7 @@
                             </ul>
                         </div> <!-- navbar collapse -->
                         <div class="button">
-                            <a href="#contact" class="btn white-bg mouse-dir">Contact <span class="dir-part"></span></a>
+                            <a href="#contact" class="btn white-bg mouse-dir">{{contenido.navbar.contact}}<span class="dir-part"></span></a>
                         </div>
                     </nav> <!-- navbar -->
                 </div>
@@ -278,19 +280,19 @@
                     <div class="col-lg-6 co-12">
                         <div class="home-slider">
                             <div class="hero-text">
-                                <span class="small-title wow fadeInUp" data-wow-delay=".3s">Business Solution</span>
+                                <span class="small-title wow fadeInUp" data-wow-delay=".3s">{{contenido.header.seccion1.etiqueta}}</span>
                                 <h1 class="wow fadeInUp" data-wow-delay=".5s">
-                                    <span>We Deliver Results</span>
+                                    <span>{{contenido.header.seccion1.span}}</span>
                                     <br>
-                                    Strategy Development & Technical Support
+                                    {{contenido.header.seccion1.h1}}
                                 </h1>
                                 <p class="wow fadeInUp" data-wow-delay=".7s">
-                                    We help develop and execute marketing strategies, including content marketing, SEM, and SMM. Additionally, we offer web development, process automation, and technical support to ensure your operations run smoothly and efficiently.
+                                    {{contenido.header.seccion1.p}}
                                     <br>
                                 </p>
                                 <div class="button wow fadeInUp" data-wow-delay=".9s">
                                     <a href="#service_section" class="btn mouse-dir">
-                                        Discover More 
+                                        {{contenido.header.boton}}
                                         <span class="dir-part"></span>
                                     </a>
                                 </div>
@@ -298,36 +300,36 @@
 
 
                             <div class="hero-text">
-                                <span class="small-title">Business Solution</span>
+                                <span class="small-title">{{contenido.header.seccion2.etiqueta}}</span>
                                 <h1>
-                                    <span>Consulting Services</span>
+                                    <span>{{contenido.header.seccion2.span}}</span>
                                     <br>
-                                    Content Creation & Customer Support
+                                    {{contenido.header.seccion2.h1}}
                                 </h1>
                                 <p>
-                                    Our team designs and writes attractive, relevant posts for your audience on Twitter, Facebook, and Instagram. We also provide customer support by responding to inquiries and resolving user issues on social media.
+                                    {{contenido.header.seccion2.p}}
                                     <br>
                                 </p>
                                 <div class="button">
                                     <a href="#service_section" class="btn mouse-dir">
-                                        Discover More 
+                                        {{contenido.header.boton}}
                                         <span class="dir-part"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="hero-text">
-                                <span class="small-title">Business Solution</span>
+                                <span class="small-title">{{contenido.header.seccion3.etiqueta}}</span>
                                 <h1>
-                                    <span>We Provide Quality</span>
-                                    <br>Social Media Management
+                                    <span>{{contenido.header.seccion3.span}}</span>
+                                    <br>{{contenido.header.seccion3.h1}}
                                 </h1>
                                 <p>
-                                    We offer comprehensive social media management for Twitter, Facebook, and Instagram. This includes profile creation, promotional design, and result analysis. Our services ensure your social media presence is engaging and effective.
+                                    {{contenido.header.seccion3.p}}
                                     <br>
                                 </p>
                                 <div class="button">
                                     <a href="#service_section" class="btn mouse-dir">
-                                        Discover More 
+                                        {{contenido.header.boton}}
                                         <span class="dir-part"></span>
                                     </a>
                                 </div>
@@ -351,10 +353,10 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12">
                     <div class="section-title">
-                        <span class="wow fadeInDown" data-wow-delay=".2s">What We Offer You</span>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Services</h2>
+                        <span class="wow fadeInDown" data-wow-delay=".2s">{{contenido.services.header.etiqueta}}</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">{{contenido.services.header.h1}}</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s">
-                            We use the latest technologies like Django, Bootstrap 5, and AWS EC2 to bring your ideas to life. Let’s make something amazing together!
+                            {{contenido.services.header.p}}
                         </p>
                     </div>
                 </div>
@@ -369,21 +371,21 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a href="service-single.html">Website Implementation</a></h3>
-                        <p>Need a Stunning Website? Let’s Go! Get a custom-designed, fully functional website for your business.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Creation of a website that showcases company information. This service includes:</p>
+                        <h3><a href="service-single.html">{{contenido.services.servicios.s1.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s1.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s1.description}}:</p>
+                        <p>{{contenido.services.servicios.s1.p2}}</p>
                         <ul>
-                            <li><p>Custom website design.</p></li>
-                            <li><p>Site development and programming.</p></li>
-                            <li><p>Initial setup and configuration.</p></li>
-                            <li><p>DNS configuration.</p></li>
-                            <li><p>SSL certificate issued by a certifying authority.</p></li>
-                            <li><p>Search Engine Optimization (SEO)</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li3}}</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li4}}</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li5}}</p></li>
+                            <li><p>{{contenido.services.servicios.s1.li6}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Approximate Price:</span> 
-                            Between 250 and 300 USD, depending on the complexity and features of the site.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s1.span}}</span> 
+                            {{contenido.services.servicios.s1.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -405,22 +407,22 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Business Process Automation</a></h3>
-                        <p>Automate Your Business Processes! Streamline your operations with automated solutions, from inventory management to complex workflows.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Implementation of automated solutions for one or more business processes. This service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s2.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s2.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s2.description}}</p>
+                        <p>{{contenido.services.servicios.s2.description}}</p>
                         <ul>
-                            <li><p>Inventory management.</p></li>
-                            <li><p>Report generation.</p></li>
-                            <li><p>Automation of simple tasks.</p></li>
-                            <li><p>Optimization of complex workflows.</p></li>
-                            <li><p>DNS configuration.</p></li>
-                            <li><p>SSL certificate issued by a certifying authority.</p></li>
-                            <li><p>Search Engine Optimization (SEO)</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li3}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li4}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li5}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li6}}</p></li>
+                            <li><p>{{contenido.services.servicios.s2.li7}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Approximate Price:</span> 
-                            Between 600 and 3,000 USD, depending on the scope and complexity of the processes to be automated.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s2.span}}</span> 
+                            {{contenido.services.servicios.s2.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -441,18 +443,18 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Strategy Development</a></h3>
-                        <p>Strategic Marketing Solutions! Elevate your brand with tailored marketing strategies</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Assistance in creating and executing marketing strategies on social media. This service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s3.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s3.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s3.description}}</p>
+                        <p>{{contenido.services.servicios.s3.p2}}</p>
                         <ul>
-                            <li><p>Content marketing.</p></li>
-                            <li><p>Search Engine Marketing (SEM).</p></li>
-                            <li><p>Social Media Marketing (SMM).</p></li>
+                            <li><p>{{contenido.services.servicios.s3.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s3.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s3.li3}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Price:</span> 
-                            300 USD per month.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s3.span}}</span> 
+                            {{contenido.services.servicios.s3.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -475,19 +477,19 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Monthly Web Server Hosting</a></h3>
-                        <p>Reliable Web Hosting on AWS! Host your website on powerful AWS EC2 instances, tailored to your needs. Enjoy seamless performance and expert support.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Hosting the web server that supports the company's website, using EC2 instances on AWS. This service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s4.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s4.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s4.description}}</p>
+                        <p>{{contenido.services.servicios.s4.p2}}</p>
                         <ul>
-                            <li><p>Configuration and management of servers on AWS.</p></li>
-                            <li><p>Selection of appropriate EC2 instances based on the needs of the implemented platform.</p></li>
-                            <li><p>Server monitoring and maintenance.</p></li>
-                            <li><p>Technical support for the server.</p></li>
+                            <li><p>{{contenido.services.servicios.s4.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s4.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s4.li3}}</p></li>
+                            <li><p>{{contenido.services.servicios.s4.li4}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Approximate Price:</span> 
-                            Between 70 and 2,300 USD per month, depending on site consumption, storage load, and server characteristics.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s4.span}}</span> 
+                            {{contenido.services.servicios.s4.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -515,25 +517,25 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Social Media Management</a></h3>
-                        <p>Boost Your Social Media Presence! Let us manage your social media profiles with daily posts, promotions, and engagement. Get detailed analytics and custom designs</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Comprehensive management of the company's social media profiles. This service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s5.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s5.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s5.description}}</p>
+                        <p>{{contenido.services.servicios.s5.p2}}</p>
                         <ul>
-                            <li><p>Management of profiles on Twitter, Facebook, and Instagram.</p></li>
-                            <li><p>Creation of social profiles (if not already existing).</p></li>
-                            <li><p>Design of promotions, offers, and services tailored to the niche.</p></li>
-                            <li><p>Results analysis with monthly reports.</p></li>
-                            <li><p>Comment moderation and response to inquiries.</p></li>
-                            <li><p>Custom design of social media covers and backgrounds.</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li3}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li4}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li5}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li6}}</p></li>
                             <br>
-                            <li><p>3 tweets per day on Twitter.</p></li>
-                            <li><p>3 posts per day on Facebook.</p></li>
-                            <li><p>3 posts per day on Instagram</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li7}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li8}}</p></li>
+                            <li><p>{{contenido.services.servicios.s5.li9}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Price:</span> 
-                            400 USD per month.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s5.span}}</span> 
+                            {{contenido.services.servicios.s5.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -561,19 +563,19 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Social Media Content Creation</a></h3>
-                        <p>Engaging Content Creation! Captivate your audience with professionally designed and written social media posts. Perfect for Twitter, Facebook, and Instagram.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Transform your social media with irresistible and high-impact content. Our service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s6.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s6.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s6.description}}</p>
+                        <p>{{contenido.services.servicios.s6.p2}}</p>
                         <ul>
-                            <li><p>Customized Posts: We design and write exclusive content for Twitter, Facebook, and Instagram, tailored to your brand and audience.</p></li>
-                            <li><p>Persuasive Texts: We create messages that capture attention and generate engagement.</p></li>
-                            <li><p>Impactful Visual Design: We develop images and graphics that stand out in the feed and attract your audience.</p></li>
-                            <li><p>Trend Adaptation: We stay up-to-date with the latest trends to ensure your content is always at the forefront.</p></li>
+                            <li><p>{{contenido.services.servicios.s6.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s6.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s6.li3}}</p></li>
+                            <li><p>{{contenido.services.servicios.s6.li4}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Price:</span> 
-                            200 USD per month.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s6.span}}</span> 
+                            {{contenido.services.servicios.s6.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -602,18 +604,18 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Customer Support</a></h3>
-                        <p>Responsive Customer Support! Ensure your customers get the help they need with our dedicated social media support service. Fast, friendly, and efficient.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Enhance your customer experience with our responsive and efficient social media support. Our service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s7.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s7.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s7.description}}</p>
+                        <p>{{contenido.services.servicios.s7.p2}}</p>
                         <ul>
-                            <li><p>Real-Time Inquiry Management: Promptly address and resolve user inquiries and issues on social media platforms.</p></li>
-                            <li><p>Personalized Responses: Craft tailored responses to ensure customer satisfaction and loyalty.</p></li>
-                            <li><p>Proactive Engagement: Monitor and engage with your audience to preemptively address potential concerns.</p></li>
+                            <li><p>{{contenido.services.servicios.s7.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s7.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s7.li3}}</p></li>
                         </ul>
                         <p>
-                            <span class="fw-bold fs-6">Price:</span> 
-                            180 USD per month.
+                            <span class="fw-bold fs-6">{{contenido.services.servicios.s7.span}}</span> 
+                            {{contenido.services.servicios.s7.precio}}
                         </p>
                         <div class="circles-wrap">
                             <div class="circles">
@@ -636,33 +638,33 @@
                                 </svg>
                             </p>
                         </div>
-                        <h3><a>Technical Support</a></h3>
-                        <p>Optimize your website and server with our premium technical support! No more worries about maintenance and updates.</p>
-                        <p class="fw-bold fs-5">Description:</p>
-                        <p>Technical support service for contracted websites and servers. This service includes:</p>
+                        <h3><a>{{contenido.services.servicios.s8.titulo}}</a></h3>
+                        <p>{{contenido.services.servicios.s8.p1}}</p>
+                        <p class="fw-bold fs-5">{{contenido.services.servicios.s8.description}}</p>
+                        <p>{{contenido.services.servicios.s8.p2}}</p>
                         <ul>
-                            <li><p>Routine maintenance.</p></li>
-                            <li><p>Minor and major updates.</p></li>
-                            <li><p>Problem resolution.</p></li>
+                            <li><p>{{contenido.services.servicios.s8.li1}}</p></li>
+                            <li><p>{{contenido.services.servicios.s8.li2}}</p></li>
+                            <li><p>{{contenido.services.servicios.s8.li3}}</p></li>
                         </ul>
-                        <p class="fw-bold fs-6">Approximate Price:</p> 
+                        <p class="fw-bold fs-6">{{contenido.services.servicios.s8.span}}</p> 
                         <ul>
                             <li>
                                 <p>
-                                    <span class="fw-bold fs-7">Basic Support:</span>
-                                    Between 30 and 50 USD per month per user. Includes routine maintenance, minor updates, and resolution of basic issues.
+                                    <span class="fw-bold fs-7">{{contenido.services.servicios.s8.hp1}}</span>
+                                    {{contenido.services.servicios.s8.precio1}}
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <span class="fw-bold fs-7">Intermediate Support::</span>
-                                    Between 50 and 100 USD per month per user. Includes more complex updates, preventive maintenance, and resolution of moderate issues.
+                                    <span class="fw-bold fs-7">{{contenido.services.servicios.s8.hp2}}</span>
+                                    {{contenido.services.servicios.s8.precio2}}
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <span class="fw-bold fs-7">Advanced Support:</span>
-                                    Between 100 and 200 USD per month per user. Includes major updates, significant infrastructure changes, proactive maintenance, and resolution of complex issues.
+                                    <span class="fw-bold fs-7">{{contenido.services.servicios.s8.hp3}}</span>
+                                    {{contenido.services.servicios.s8.precio3}}
                                 </p>
                             </li>
                         </ul>
@@ -687,10 +689,10 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-12">
                     <div class="section-title">
-                        <span class="wow fadeInDown" data-wow-delay=".2s">Our Team</span>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Creative Team</h2>
+                        <span class="wow fadeInDown" data-wow-delay=".2s">{{contenido.team.header.span}}</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">{{contenido.team.header.h2}}}</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s">
-                            Our team of experts is dedicated to providing high-quality services, specifically designed for small and medium-sized businesses. We take pride in our innovative solutions and personalized approach, ensuring that your business thrives in the digital environment.
+                            {{contenido.team.header.p}}
                         </p>
                     </div>
                 </div>
@@ -735,7 +737,7 @@
                                     <li>
                                         <a href="https://github.com/eliaselp/">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                             </svg>
                                         </a>
                                     </li>
@@ -743,9 +745,9 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h3>Elías Eduardo Liranza Pérez</h3>
-                            <span>Founder - CEO</span>
-                            <p>Cybersecurity Engineer, Fullstack Developer, and Entrepreneur.</p>
+                            <h3>{{contenido.team.elias.nombre}}</h3>
+                            <span>{{contenido.team.elias.cargo}}</span>
+                            <p>{{contenido.team.elias.p}}</p>
                         </div>
                     </div>
                 </div>
@@ -788,9 +790,9 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h3>Melanie Tamayo Casademunt</h3>
-                            <span>Founder - Director of Digital Marketing</span>
-                            <p>Bachelor in Tourism, Community Manager, Specialist in Digital Marketing, Content Creator, Entrepreneur</p>
+                            <h3>{{contenido.team.melanie.nombre}}</h3>
+                            <span>{{contenido.team.melanie.cargo}}</span>
+                            <p>{{contenido.team.melanie.p}}</p>
                         </div>
                     </div>
                 </div>
@@ -805,37 +807,37 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="section-title">
-                        <span>Get to Know Us</span>
-                        <h2>We Are Very <br>Good In<br> Boosting Your <br>Businesses</h2>
+                        <span>{{contenido.contacto.header.span}}</span>
+                        <h2>{{contenido.contacto.header.h2}}</h2>
                         <p>
-                            Boost your business with our web development, process automation, and digital marketing services, designed to maximize your growth and efficiency!
+                            {{contenido.contacto.header.p}}
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-delay=".4s">
                     <div class="right-form">
                         <div class="section-heading">
-                            <span class="small">Request</span>
-                            <h4>Let's <span>Request a Call</span> Back</h4>
+                            <span class="small">{{contenido.contacto.header.span}}</span>
+                            <h4>{{contenido.contacto.header.h4}}</h4>
                         </div>
                         <div class="contact-form-box ">
                             <form method="post" action="assets/mail/mail.php" class="mailform">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="text" name="name" placeholder="Your Name">
+                                        <input type="text" name="name" placeholder="{{contenido.contacto.form.nombre}}">
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <input type="email" name="email" placeholder="Your Email">
+                                        <input type="email" name="email" placeholder="{{contenido.contacto.form.email}}">
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <input type="text" name="phone" placeholder="Your Number">
+                                        <input type="text" name="phone" placeholder="{{contenido.contacto.form.phone}}">
                                     </div>
                                     <div class="col-12">
-                                        <textarea name="message" rows="5" placeholder="Your Messege"></textarea>
+                                        <textarea name="message" rows="5" placeholder="{{contenido.contacto.form.mensaje}}"></textarea>
                                     </div>
                                     <div class="button col-12">
                                         <button type="submit" class="btn white-bg mouse-dir">
-                                            Sumbit
+                                            {{contenido.contacto.form.boton}}
                                             <span class="dir-part"></span>
                                         </button>
                                     </div>
@@ -995,8 +997,8 @@
                             <div class="col-lg-6 col-md-6 col-6">
                                 <!-- Single Widget -->
                                 <div class="single-footer f-contact f-link">
-                                    <h3>Contact Us</h3>
-                                    <p>Untrammelled & nothing preven our being able</p>
+                                    <h3>{{contenido.footer.h3}}</h3>
+                                    <p>{{contenido.footer.p}}</p>
                                     <ul class="footer-contact">
                                         <li>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone lni lni-phone" viewBox="0 0 16 16">
@@ -1034,7 +1036,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="right">
-                                <p>All Right Reserved Design By WEMAutomations</p>
+                                <p>{{contenido.footer.c}}</p>
                             </div>
                         </div>
                     </div>
@@ -1128,34 +1130,6 @@
             }
         });
 
-        //======== Testimonial Slider
-        var slider = new tns({
-            container: '.testimonial-slider',
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: true,
-            controls: false,
-            controlsText: [
-                '<i class="lni lni-arrow-left prev"></i>',
-                '<i class="lni lni-arrow-right next"></i>'
-            ],
-            responsive: {
-                1200: {
-                    items: 2,
-                },
-                992: {
-                    items: 1,
-                },
-                0: {
-                    items: 1,
-                }
-
-            }
-        });
-
         //============== isotope masonry js with imagesloaded
         imagesLoaded('#container', function () {
             var elem = document.querySelector('.grid');
@@ -1181,5 +1155,4 @@
         });
     </script>
 </body>
-
 </html>
