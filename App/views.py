@@ -252,7 +252,7 @@ class Index(View):
                 traducido = models.ContenidoTraducido.objects.get(idioma=user_language).contenido
                 traducido = json_string_a_diccionario(traducido)
                 return render(request,"index.html",{
-                    "contenido":traducido
+                    "contenido":traducido,"idioma":user_language
                 })
             else:
                 traducido = traducir_diccionario(diccionario=contenido,codigo_idioma_destino=user_language)
@@ -260,5 +260,5 @@ class Index(View):
                     dbtr = models.ContenidoTraducido(idioma=user_language,contenido=diccionario_a_json_string(traducido))
                     dbtr.save()
                 return render(request,"index.html",{
-                    "contenido":traducido
+                    "contenido":traducido,"idioma":user_language
                 })
