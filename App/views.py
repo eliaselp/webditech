@@ -10,13 +10,8 @@ from googletrans import Translator
 def traducir_texto(traductor,texto, codigo_idioma_destino):
     solve = False
     while solve==False:
-        try:
-            traduccion = traductor.translate(texto, dest=codigo_idioma_destino)
-            solve = True
-        except Exception as e:
-            print(str(e))
-            time.sleep(10)
-            traductor = Translator()
+        traduccion = traductor.translate(texto, dest=codigo_idioma_destino)
+        solve = True
     return traduccion.text
 
 
