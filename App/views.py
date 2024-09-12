@@ -19,7 +19,13 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
             if isinstance(valor, dict):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
-                diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
+                solve = False
+                while solve == False:
+                    try:
+                        diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
+                        solve=True
+                    except TypeError:
+                        pass
         return diccionario
     return traducir_valores(diccionario.copy())
 
