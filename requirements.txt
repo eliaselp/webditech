@@ -1,3 +1,4 @@
 django
 whitenoise
 translate
+mtranslate
