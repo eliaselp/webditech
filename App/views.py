@@ -257,8 +257,9 @@ class Index(View):
                 })
             else:
                 traducido = traducir_diccionario(diccionario=contenido,codigo_idioma_destino=user_language)
-                dbtr = models.ContenidoTraducido(idioma=user_language,contenido=diccionario_a_json_string(traducido))
-                dbtr.save()
+                if not models.ContenidoTraducido.objects.filter(idioma=user_language).exists():
+                    dbtr = models.ContenidoTraducido(idioma=user_language,contenido=diccionario_a_json_string(traducido))
+                    dbtr.save()
                 return render(request,"index.html",{
                     "contenido":traducido
                 })
