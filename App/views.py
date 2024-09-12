@@ -3,6 +3,7 @@ from django.views import View
 from App import models
 import re
 import json
+import time
 from googletrans import Translator
 
 
@@ -14,6 +15,7 @@ def traducir_texto(traductor,texto, codigo_idioma_destino):
             solve = True
         except Exception as e:
             print(str(e))
+            time.sleep(10)
             traductor = Translator()
     return traduccion.text
 
