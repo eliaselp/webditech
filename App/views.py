@@ -242,7 +242,7 @@ class Index(View):
             },
             'footer':{
                 'h3':"Contact Us",
-                'p':'Without barriers or limitations, we are here to help you reach your full potential.',
+                'p':'Without barriers or limitations. We are here to help you reach your full potential.',
                 'c':"All Right Reserved Design By WEMAutomations",
             }
         }
