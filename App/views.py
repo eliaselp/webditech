@@ -23,7 +23,7 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
                 diccionario[clave] = traducir_valores(valor)
             elif isinstance(valor, str):
                 diccionario[clave] = traducir_texto(traductor, valor, codigo_idioma_destino)
-                print(diccionario[clave])
+                print(f"{clave} ===>> {diccionario[clave]})
         return diccionario
     return traducir_valores(diccionario.copy())
 
