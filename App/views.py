@@ -2,9 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from App import models
 import re
-import time
-# Create your views here.
-
+import json
 from googletrans import Translator
 
 
@@ -16,7 +14,7 @@ def traducir_texto(traductor,texto, codigo_idioma_destino):
             solve = True
         except Exception as e:
             print(str(e))
-            time.sleep(1)
+            traductor = Translator()
     return traduccion.text
 
 
@@ -33,7 +31,7 @@ def traducir_diccionario(diccionario, codigo_idioma_destino):
     return traducir_valores(diccionario.copy())
 
 
-import json
+
 
 def diccionario_a_json_string(diccionario):
     """
