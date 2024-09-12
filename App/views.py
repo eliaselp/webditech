@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from App import models
 import re
+import time
 # Create your views here.
 
 from googletrans import Translator
