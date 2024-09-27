@@ -2,3 +2,6 @@ django
 whitenoise
 translate
 mtranslate
+bleach
+django_otp
+qrcode
