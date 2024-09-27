@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-iuo^-xg2ts72erj$#7w1wk4h56ildjmsb&z8w_8e)ck2xp4#!_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -124,7 +124,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-if DEBUG:
+if not DEBUG:
     CSRF_COOKIE_SECURE = True # O True si usas HTTPS
     CSRF_TRUSTED_ORIGINS = ['https://webditech.ddns.net','http://localhost:8000']
 
