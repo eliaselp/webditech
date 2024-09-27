@@ -1,0 +1,503 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WEBDITECH INTERNATIONAL COMPANY</title> 
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+        <!-- Choices.js-->
+        <link rel="stylesheet" href="{% static 'css/admin/choices.min.css' %}">
+        <!-- Google fonts - Muli-->
+        <link rel="stylesheet" href="{% static 'css/admin/css.css' %}">
+        <!-- theme stylesheet-->
+        <link rel="stylesheet" href="{% static 'css/admin/style.default.premium.688adad1.css' %}" id="theme-stylesheet">
+        <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="{% static 'css/admin/custom.0a822280.css' %}">
+        <!-- Favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="{%static 'img/icono2.jpg'%}" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg py-3 bg-dash-dark-2 border-bottom border-dash-dark-1 z-index-10">
+                <div class="search-panel">
+                    <div class="search-inner d-flex align-items-center justify-content-center">
+                        <div class="close-btn d-flex align-items-center position-absolute top-0 end-0 me-4 mt-2 cursor-pointer">
+                            <span>Close</span>
+                            <svg class="svg-icon svg-icon-md svg-icon-heavy text-gray-700 mt-1">
+                                <use xlink:href="#close-1"> </use>
+                            </svg>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-lg-8 mx-auto">
+                                <form class="px-4" id="searchForm" action="#">
+                                    <div class="input-group position-relative flex-column flex-lg-row flex-nowrap">
+                                        <input class="form-control shadow-0 bg-none px-0 w-100" type="search" name="search" placeholder="What are you searching for...">
+                                        <button class="btn btn-link text-gray-600 px-0 text-decoration-none fw-bold cursor-pointer text-center" type="submit">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex align-items-center justify-content-between py-1">
+                    <div class="navbar-header d-flex align-items-center">
+                        <a class="navbar-brand text-uppercase text-reset"
+                            href="../../../../../../../../../../../../../../../admin/dashboard/">
+                            <div class="brand-text brand-big">
+                                <strong class="text-primary">WEBDITECH</strong>
+                                <strong>ADMIN</strong>
+                            </div>
+                            <div class="brand-text brand-sm">
+                                <strong class="text-primary">W</strong>
+                                <strong>A</strong>
+                            </div></a>
+                        <button class="sidebar-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="search-open nav-link px-0" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Messages dropdown -->
+                        <li class="list-inline-item dropdown px-lg-2">
+                            <a class="nav-link text-reset px-1 px-lg-0" id="navbarDropdownMenuLink1" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-arrow-down-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                                <span class="badge bg-dash-color-1">350</span>
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                aria-labelledby="navbarDropdownMenuLink1">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center">
+                                        <div class="position-relative">
+                                            <img class="avatar avatar-md" src="{% static 'img/admin/avatar-3.d23ced61.jpg' %}" alt="Nadia Halsey">
+                                            <div class="availability-status bg-success"></div>
+                                        </div>
+                                        <div class="ms-3"> 
+                                            <strong class="d-block">Nadia Halsey</strong>
+                                            <span class="d-block text-xs">
+                                                lorem ipsum dolor sit amit
+                                            </span>
+                                            <small class="d-block">9:30am</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center">
+                                        <div class="position-relative">
+                                            <img class="avatar avatar-md" src="{% static 'img/admin/avatar-2.9eed705d.jpg' %}" alt="Peter Ramsy">
+                                            <div class="availability-status bg-warning"></div>
+                                        </div>
+                                        <div class="ms-3"> 
+                                            <strong class="d-block">Nadia Halsey</strong>
+                                            <span class="d-block text-xs">
+                                                lorem ipsum dolor sit amit</span>
+                                            <small class="d-block">9:30am</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="position-relative">
+                                            <img class="avatar avatar-md" src="{% static 'img/admin/avatar-1.ce912d90.jpg' %}" alt="Sam Kaheil">
+                                            <div class="availability-status bg-danger"></div>
+                                        </div>
+                                        <div class="ms-3"> 
+                                            <strong class="d-block">
+                                                Nadia Halsey
+                                            </strong>
+                                            <span class="d-block text-xs">
+                                                lorem ipsum dolor sit amit
+                                            </span>
+                                            <small class="d-block">9:30am</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="position-relative">
+                                            <img class="avatar avatar-md" src="{% static 'img/admin/avatar-5.f8d832d9.jpg' %}" alt="Sara Wood">
+                                            <div class="availability-status bg-secondary"></div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <strong class="d-block">
+                                                Nadia Halsey
+                                            </strong>
+                                            <span class="d-block text-xs">
+                                                lorem ipsum dolor sit amit
+                                            </span>
+                                            <small class="d-block">9:30am</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center message" href="#">
+                                        <strong>
+                                            See All Messages 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                            </svg>
+                                        </strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Tasks dropdown                   -->
+                        <li class="list-inline-item dropdown px-lg-2">
+                            <a class="nav-link text-reset px-1 px-lg-0" id="navbarDropdownMenuLink2" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-layers-fill" viewBox="0 0 16 16">
+                                    <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882z"/>
+                                    <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0z"/>
+                                </svg>
+                                <span class="badge bg-dash-color-3">9</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink2">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <strong>Task 1</strong>
+                                            <span>40% complete</span>
+                                        </div>
+                                        <div class="progress" style="height: 2px">
+                                            <div class="progress-bar bg-dash-color-1" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <strong> Task 2 </strong>
+                                            <span> 20% complete</span>
+                                        </div>
+                                        <div class="progress" style="height: 2px">
+                                            <div class="progress-bar bg-dash-color-2" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a class="dropdown-item text-center" href="#"> 
+                                        <strong>
+                                            See All Tasks 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                            </svg>
+                                            <i class="fas fa-angle-right ms-1"></i>
+                                        </strong>
+                                    </a></li>
+                            </ul>
+                        </li>                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="d-flex align-items-stretch">
+            <!-- Sidebar Navigation-->
+            <nav id="sidebar">
+                <!-- Sidebar Header-->
+                <div class="sidebar-header d-flex align-items-center justify-content-between p-4">
+                    <div class="d-flex">
+                        <a class="d-inline-block" href="../../../../../../../../../../../admin/perfil/">
+                            <img class="avatar shadow-0 img-fluid rounded-circle"
+                                src="{% static 'img/admin/avatar-6.2821b67d.jpg' %}"
+                                alt="..."
+                            >
+                        </a>
+                        <div class="ms-3 title">
+                            <h1 class="h5 mb-1">Elias Liranza</h1>
+                            <p class="text-sm text-gray-700 mb-0 lh-1">Founder CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-uppercase text-gray-600 text-xs mx-3 px-2 heading mb-2">Main</span>
+                <ul class="list-unstyled">
+                    <li class="sidebar-item active">
+                        <a class="sidebar-link" href="../../../../../../../../../../admin/dashboard/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                            </svg>
+                            <span class="mx-1">Home </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#SecuDropdown" data-bs-toggle="collapse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-lock" viewBox="0 0 16 16">
+                                <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                                <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+                            </svg>
+                            <span class="mx-1">Seguridad</span>
+                        </a>                        
+                        <ul class="collapse list-unstyled " id="SecuDropdown">
+                            <li>
+                                {% if requests.user.action_verify %}
+                                    <a class="sidebar-link" data-bs-toggle="modal" data-bs-target="#deshabilitar2fa">
+                                        Deshabilitar 2FA
+                                    </a>
+                                {% else %}
+                                    <a class="sidebar-link" data-bs-toggle="modal" data-bs-target="#habilitar2fa">
+                                        Habilitar 2FA
+                                    </a>
+                                {% endif %}
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="charts-gauge-sparkline.html">
+                                    Código antiphishing
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="../../../../../../../../../../admin/logout/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                            </svg>
+                            <span class="mx-1">Cerrar Sesión</span>
+                        </a>                        
+                    </li>
+
+                    <span class="text-uppercase text-gray-600 text-xs mx-3 px-2 heading mb-2 mt-3">
+                        Portal Web
+                    </span>
+
+                    
+                    <li class="sidebar-item">
+                        <a class="sidebar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                            </svg>
+                            <span class="mx-1">Traducciones</span>
+                        </a>
+                    </li>
+
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#chartsDropdown" data-bs-toggle="collapse">
+                            <svg class="svg-icon svg-icon-sm svg-icon-heavy">
+                                <use xlink:href="#sales-up-1"> </use>
+                            </svg>
+                            <span>Charts </span>
+                        </a>
+                        <ul class="collapse list-unstyled " id="chartsDropdown">
+                            <li>
+                                <a class="sidebar-link" href="charts.html">
+                                    Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="charts-gauge-sparkline.html">
+                                    Gauge + Sparkline
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-content">
+                <!-- Page Header-->
+                {% block contenido %}
+                {% endblock  %}
+                <!-- Page Footer-->
+                <footer
+                    class="position-absolute bottom-0 bg-dash-dark-2 text-white text-center py-3 w-100 text-xs"
+                    id="footer">
+                    <div class="container-fluid text-center">
+                        <p class="mb-0 text-dash-gray">
+                            2024 &copy; Design by 
+                            <a>WEBDITECH INTERNATIONAL COMPANY</a>.
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+        
+        
+        <button class="btn btn-primary btn-sm d-none d-md-inline-block" type="button" data-bs-toggle="collapse"
+            data-bs-target="#style-switch" id="style-switch-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gear fas fa-cog fa-2x" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+            </svg>
+        </button>
+        <div class="collapse" id="style-switch">
+            <h5 class="mb-3">Select theme colour</h5>
+            <form class="mb-3">
+                <select class="form-select" name="colour" id="colour">
+                    <option value>select colour variant</option>
+                    <option value="{% static 'css/admin/style.default.premium.688adad1.css' %}">pink</option>
+                    <option value="{% static 'css/admin/style.red.premium.39c2a96a.css' %}">red</option>
+                    <option value="{% static 'css/admin/style.green.premium.12d2e631.css' %}">green</option>
+                    <option value="{% static 'css/admin/style.violet.premium.d8196f32.css' %}">violet</option>
+                    <option value="{% static 'css/admin/style.sea.premium.b0c1974f.css' %}">sea</option>
+                    <option value="{% static 'css/admin/style.blue.premium.c3f02455.css' %}">blue</option>
+                </select>
+            </form>
+            <p><img class="img-fluid" src="{% static 'img/admin/template-mac.e1286699.png' %}" alt></p>
+            <p class="text-muted text-xs">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="habilitar2fa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Habilitar la autenticación de dos factores (2FA)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="../../../../../../../../../../../../admin/verificar_mail/1/" method="post">
+                            <input type="hidden" name="location" value="dashboard">
+                            {% csrf_token %}
+                            <p class="text-primary">
+                                Estás a punto de habilitar la autenticación de dos factores (2FA). 
+                            </p>
+                            <p class="text-primary">
+                                Se enviará un código de confirmación a tu correo electrónico {{request.user.email}}.
+                            </p>
+                            <p class="text-primary">
+                                Asegúrate de tener la aplicación Google Authenticator o una similar instalada.
+                            </p>
+                            <div class="col-lg">
+                                <label class="visually-hidden" for="inlineFormInputGroupUsername">Tocken</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+                                        </svg>
+                                    </div>
+                                    <input class="form-control" id="inlineFormInputGroupUsername" type="text" placeholder="Tocken" name="tocken">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <script>
+                                    function disableLink(event) {
+                                        event.preventDefault(); // Evita la redirección inmediata
+                            
+                                        var link = document.getElementById("enviar-codigo");
+                                        var originalText = link.innerHTML;
+                                        var seconds = 30;
+                            
+                                        link.classList.add("disabled");
+                                        link.setAttribute("aria-disabled", "true");
+                                        link.style.pointerEvents = "none";
+                            
+                                        var interval = setInterval(function() {
+                                            if (seconds > 0) {
+                                                link.innerHTML = "Reintentar en " + seconds + "s";
+                                                seconds--;
+                                            } else {
+                                                clearInterval(interval);
+                                                link.innerHTML = originalText;
+                                                link.classList.remove("disabled");
+                                                link.removeAttribute("aria-disabled");
+                                                link.style.pointerEvents = "auto";
+                                            }
+                                        }, 1000);
+                            
+                                        // Redirige a la URL después de un pequeño retraso para permitir la deshabilitación
+                                        setTimeout(function() {
+                                            window.location.href = link.href;
+                                        }, 100);
+                                    }
+                                </script>
+                                
+                                <a id="enviar-codigo" type="button" class="btn btn-secondary" href="../../../../../../../../../../../../admin/verificar_mail/1/" onclick="disableLink(event);">
+                                    Enviar código
+                                </a>
+                                <button type="submit" class="btn btn-primary">Confirmar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- JavaScript files-->
+        <script
+            src="{% static 'js/admin/bootstrap.bundle.min.js' %}"></script>
+        <script
+            src="{% static 'js/admin/just-validate.min.js' %}"></script>
+        <script
+            src="{% static 'js/admin/Chart.min.js' %}"></script>
+        <script
+            src="{% static 'js/admin/choices.min.js' %}"></script>
+        <script
+            src="{% static 'js/admin/js-cookie.0d5f0e08.js' %}"> </script>
+        <script
+            src="{% static 'js/admin/demo.bbd40f0c.js' %}"> </script>
+        <script
+            src="{% static 'js/admin/charts-home.f7b8867a.js' %}"></script>
+        <!-- Notifications  -->
+        <!-- Toast-->
+        
+        {% if Error or Success %}
+            <div class="toast-container position-fixed top-0 end-0 p-4">
+                <div class="toast hide bg-dash-dark-1 text-white" role="alert"
+                    aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-dash-dark-1">
+                        {% if Error %}
+                            <strong class="me-auto text-danger">
+                                ERROR
+                            </strong>        
+                        {% elif Success %}
+                            <strong class="me-auto text-success">
+                                SUCCESS
+                            </strong>
+                        {% endif %}
+                        <button class="btn-close btn-close-white" type="button" 
+                            data-bs-dismiss="toast" aria-label="Close">
+                        </button>
+                    </div>
+                    {% if Error %}
+                        <div class="toast-body text-danger">
+                            {{Error}}
+                        </div>
+                    {% elif Success %}
+                        <div class="toast-body text-success">
+                            {{Success}}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+        <script
+            src="{% static 'js/admin/home-premium.82d409ff.js' %}">  </script>
+        <!-- Main File-->
+        <script
+            src="{% static 'js/admin/front.df077648.js' %}"></script>
+        <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+    </script>
+        <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+        <link rel="stylesheet" href="{% static 'css/admin/all.css' %}"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+    </body>
+</html>

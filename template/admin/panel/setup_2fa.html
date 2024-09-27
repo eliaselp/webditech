@@ -1,0 +1,67 @@
+{% extends 'admin/panel/base.html' %}
+{% load static %}
+{% block contenido %}
+    <div class="bg-dash-dark-2 py-4">
+        <div class="container-fluid">
+            <h2 class="h5 mb-0">Autenticación de dos factores (2FA)</h2>
+        </div>
+    </div>
+    <div class="container-fluid py-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 py-3 px-0">
+                <li class="breadcrumb-item">
+                    <a href="../../../../../../../../../../admin/dashboard/">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    MFA
+                </li>
+            </ol>
+        </nav>
+    </div>
+    
+    <section class="pt-0">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row gy-3 align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="d-flex align-items-center">
+                                        {% if qr_code %}
+                                            <img src="data:image/png;base64,{{ qr_code }}" style="width:20rem;">  
+                                        {% else %}
+                                            <img src="{% static 'img/admin/qr.jpeg' %}" style="width:20rem;">
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 text-center">
+                                    
+                                </div>
+
+
+
+                                <div class="col-lg-4">
+                                    <ul class="list-inline text-center mb-0 d-flex flex-column justify-content-between mb-0 text-sm">
+                                        <a type="button" class="btn btn-primary my-3" href="../../../../../../../../../../admin/renewmfa/{{tocken}}/">
+                                            Renovar clave
+                                        </a>
+                                        <a type="button" class="btn btn-primary my-3 {% if request.user.action_verify == False %} disabled {% endif %}"
+                                            href="../../../../../../../../admin/disablemfa/{{tocken}}/">
+                                            Deshabilitar 2FA
+                                        </a>
+                                        <a type="button" class="btn btn-primary my-3 {% if request.user.action_verify == False %} disabled {% endif %}">
+                                            Probar Autenticación
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock  %}
+    

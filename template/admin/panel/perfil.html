@@ -1,0 +1,454 @@
+{% extends 'admin/panel/base.html' %} {% block contenido %}
+
+<!-- Page Header-->
+<div class="bg-dash-dark-2 py-4">
+    <div class="container-fluid">
+        <h2 class="h5 mb-0">Profile</h2>
+    </div>
+</div>
+<!-- Breadcrumb-->
+<div class="container-fluid py-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 py-3 px-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active"
+                aria-current="page">Profile</li>
+        </ol>
+    </nav>
+</div>
+<section class="pt-0">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <div class="card card-profile mb-4">
+                    <div
+                        class="card-header"
+                        style="
+            background-image: url(img/photos/paul-morris-116514-unsplash.2dcb4081.jpg);
+            "></div>
+                    <div class="card-body text-center">
+                        <img
+                            class="card-profile-img"
+                            src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                            title="..." />
+                        <h3 class="mb-3 text-gray-400">Nathan Andrews</h3>
+                        <p class="mb-4">
+                            One morning, when Gregor Samsa woke from
+                            troubled
+                        </p>
+                        <button class="btn btn-outline-secondary btn-sm">
+                            <i class="fab fa-twitter"></i> Follow
+                        </button>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img
+                                class="avatar avatar-lg"
+                                src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                                title="..." />
+                            <div class="ms-3">
+                                <h4>Nathan Andrews</h4>
+                                <p class="text-muted mb-0">Coder</p>
+                                <ul class="list-inline mb-0 mt-2">
+                                    <li class="list-inline-item">
+                                        <a
+                                            class="text-sm"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            title
+                                            data-bs-original-title="Nathan's Facebook"
+                                            aria-label="Nathan's Facebook"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a
+                                            class="text-sm"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            title
+                                            data-bs-original-title="@nathan_andrews"
+                                            aria-label="@nathan_andrews"><i
+                                                class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a
+                                            class="text-sm"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            title
+                                            data-bs-original-title="+420777555987"
+                                            aria-label="+420777555987"><i
+                                                class="fas fa-phone"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a
+                                            class="text-sm"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            title
+                                            data-bs-original-title="@nathan"
+                                            aria-label="@nathan"><i
+                                                class="fab fa-skype"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="card">
+                    <div class="card-header">
+                        <h3 class="mb-0">My Profile</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-auto d-flex align-items-center">
+                                <img
+                                    class="avatar avatar-md"
+                                    src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                                    title="..." />
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Name</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Your name" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Bio</label>
+                            <textarea class="form-control" rows="8">
+The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input class="form-control"
+                                placeholder="you@domain.com" />
+                        </div>
+                        <div class="mb-0">
+                            <label class="form-label">Password</label>
+                            <input class="form-control" type="password"
+                                value="password" />
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="input-group">
+                            <input class="form-control" type="text"
+                                placeholder="Message" />
+                            <button
+                                class="btn btn-outline-secondary rounded-0"
+                                type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-group">
+                        <div
+                            class="list-group-item border-start-0 border-end-0 py-5 px-lg-4">
+                            <div class="d-flex">
+                                <img
+                                    class="avatar avatar-md"
+                                    src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                                    title="..." />
+                                <div class="ms-3">
+                                    <div
+                                        class="d-flex justify-content-between">
+                                        <h5>Nathan Andrews</h5>
+                                        <small class="text-nowrap">10
+                                            min</small>
+                                    </div>
+                                    <div class="text-muted text-sm">
+                                        One morning, when Gregor Samsa woke
+                                        from troubled dreams,
+                                        he found himself transformed in his
+                                        bed into a horrible
+                                        vermin. He lay on his armour-like
+                                        back, and if he lifted
+                                        his head a little he could see his
+                                        brown belly, slightly
+                                        domed and divided by arches into
+                                        stiff sections
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <img
+                                            class="avatar avatar-sm"
+                                            src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-3.d23ced61.jpg"
+                                            title="..." />
+                                        <div
+                                            class="ms-3 text-muted text-xs">
+                                            <strong>Serenity Mitchelle:
+                                            </strong><span
+                                                class="text-gray-700">The
+                                                bedding was hardly able to
+                                                cover it and seemed
+                                                ready to slide off any
+                                                moment. His many legs,
+                                                pitifully thin compared with
+                                                the size of the rest of
+                                                him, waved about helplessly
+                                                as he looked. "What's
+                                                happened to me?" he thought.
+                                                It wasn't a dream.</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <img
+                                            class="avatar avatar-sm"
+                                            src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-1.ce912d90.jpg"
+                                            title="..." />
+                                        <div
+                                            class="ms-3 text-muted text-xs">
+                                            <strong>Tony O'Brian:
+                                            </strong><span
+                                                class="text-gray-700">
+                                                His room, a proper human
+                                                room although a little too
+                                                small, lay peacefully
+                                                between its four familiar
+                                                walls.
+                                                A collection of textile
+                                                samples lay spread out on
+                                                the
+                                                table.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="list-group-item border-start-0 border-end-0 py-5 px-lg-4">
+                            <div class="d-flex">
+                                <img
+                                    class="avatar avatar-md"
+                                    src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                                    title="..." />
+                                <div class="ms-3">
+                                    <div
+                                        class="d-flex justify-content-between">
+                                        <h5>Nathan Andrews</h5>
+                                        <small
+                                            class="text-muted text-nowrap">12
+                                            min</small>
+                                    </div>
+                                    <div class="text-gray-700 text-xs">
+                                        Samsa was a travelling salesman -
+                                        and above it there hung
+                                        a picture that he had recently cut
+                                        out of an illustrated
+                                        magazine and housed in a nice,
+                                        gilded frame.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="list-group-item border-start-0 border-end-0 py-5 px-lg-4">
+                            <div class="d-flex">
+                                <img
+                                    class="avatar avatar-md"
+                                    src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-7.9355d8f3.jpg"
+                                    title="..." />
+                                <div class="ms-3">
+                                    <div
+                                        class="d-flex justify-content-between">
+                                        <h5>Nathan Andrews</h5>
+                                        <small
+                                            class="text-muted text-nowrap">34
+                                            min</small>
+                                    </div>
+                                    <div class="text-gray-700 text-xs">
+                                        He must have tried it a hundred
+                                        times, shut his eyes so
+                                        that he wouldn't have to look at the
+                                        floundering legs, and
+                                        only stopped when he began to feel a
+                                        mild, dull pain there
+                                        that he had never felt before.
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <img
+                                            class="avatar avatar-sm"
+                                            src="https://d19m59y37dris4.cloudfront.net/dark-admin-premium/2-0/img/avatar-6.2821b67d.jpg"
+                                            title="..." />
+                                        <div
+                                            class="ms-3 text-muted text-xs">
+                                            <strong>Javier Gregory:
+                                            </strong><span
+                                                class="text-gray-700">One
+                                                morning, when Gregor Samsa
+                                                woke from troubled
+                                                dreams, he found himself
+                                                transformed in his bed into
+                                                a
+                                                horrible vermin. He lay on
+                                                his armour-like back, and
+                                                if he lifted his head a
+                                                little he could see his
+                                                brown
+                                                belly, slightly domed and
+                                                divided by arches into stiff
+                                                sections</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Edit Profile</h3>
+                        <div class="row gy-4">
+                            <div class="col-md-5">
+                                <label class="form-label">Company</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Company"
+                                    value="Nathan &amp; Nathan" />
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <label class="form-label">Username</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Username"
+                                    value="nathan" />
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <label class="form-label">Email
+                                    address</label>
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="Email" />
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">First Name</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="First Name" />
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label">Last name</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Last name" />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Address</label>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Home address" />
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <label class="form-label">City</label>
+                                <input class="form-control" type="text"
+                                    placeholder="City" />
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <label class="form-label">ZIP</label>
+                                <input class="form-control" type="number"
+                                    placeholder="ZIP" />
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label">Country</label>
+                                <div
+                                    class="choices"
+                                    data-type="select-one"
+                                    tabindex="0"
+                                    role="listbox"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <div class="choices__inner form-select">
+                                        <select
+                                            class="profile-country-choices choices__input"
+                                            data-customclass="form-select"
+                                            hidden
+                                            tabindex="-1"
+                                            data-choice="active">
+                                            <option value="uk">UK</option>
+                                        </select>
+                                        <div
+                                            class="choices__list choices__list--single">
+                                            <div
+                                                class="choices__item choices__item--selectable"
+                                                data-item
+                                                data-id="1"
+                                                data-value="uk"
+                                                data-custom-properties="null"
+                                                aria-selected="true">
+                                                UK
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="choices__list choices__list--dropdown"
+                                        aria-expanded="false">
+                                        <div class="choices__list"
+                                            role="listbox">
+                                            <div
+                                                id="choices--40ou-item-choice-1"
+                                                class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
+                                                role="option"
+                                                data-choice
+                                                data-id="1"
+                                                data-value="uk"
+                                                data-select-text="Press to select"
+                                                data-choice-selectable
+                                                aria-selected="true">
+                                                UK
+                                            </div>
+                                            <div
+                                                id="choices--40ou-item-choice-2"
+                                                class="choices__item choices__item--choice choices__item--selectable"
+                                                role="option"
+                                                data-choice
+                                                data-id="2"
+                                                data-value="us"
+                                                data-select-text="Press to select"
+                                                data-choice-selectable>
+                                                US
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">About Me</label>
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Here can be your description"
+                                    value="Mike">
+The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary" type="submit">
+                            Update Profile
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
