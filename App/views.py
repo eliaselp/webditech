@@ -54,6 +54,12 @@ class Index(View):
     def get(self, request):
         print(">> Inicio la vista Index")
         contenido = {
+            'metadatos':{
+                'title':'Webditech - Web Development and Business Process Automation',
+                'description':'Webditech offers web development, business process automation, web hosting, and technical support. Specialists in inventory management, report generation, and financial tracking.',
+                'keywords':'web development, business automation, inventory management, financial reports, cybersecurity, web hosting, technical support, Webditech, Elías Eduardo Liranza Pérez',
+                'og_description':'Ofrecemos desarrollo web, automatización de procesos empresariales, hosting web, y soporte técnico.',
+            },
             'navbar':{
                 'home':"Start",
                 'services':"Services",
@@ -235,7 +241,7 @@ class Index(View):
             'footer':{
                 'h3':"Contact Us",
                 'p':'Without barriers or limitations, we are here to help you reach your full potential.',
-                'c':"All Right Reserved Design By WEMAutomations",
+                'c':"All Right Reserved Design By WEBDITECH",
             }
         }
         # Obtener la cabecera 'Accept-Language'
