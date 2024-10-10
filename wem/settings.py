@@ -124,7 +124,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-if not DEBUG:
+if DEBUG == False:
     CSRF_COOKIE_SECURE = True # O True si usas HTTPS
     CSRF_TRUSTED_ORIGINS = ['https://webditech.ddns.net','http://localhost:8000']
 

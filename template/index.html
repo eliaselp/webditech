@@ -5,9 +5,34 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>WEBDITECH INTERNATIONAL COMPANY</title>
-    <meta name="description" content="" />
+    <title>{{contenido.metadatos.title}}</title>
+    
+    <!-- Enlace canónico -->
+    <link rel="canonical" href="https://webditech.ddns.net">
+    <meta name="description" content="{{contenido.metadatos.description}}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Webditech ofrece desarrollo web, automatización de procesos empresariales, hosting web, y soporte técnico. Especialistas en gestión de inventarios, generación de informes, y seguimiento financiero.">
+    <meta name="keywords" content="{{contenido.metadatos.keywords}}">
+    <meta name="author" content="Webditech">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="{{contenido.metadatos.title}}">
+    <meta property="og:description" content="{{contenido.metadatos.og_description}}">
+    <meta property="og:image" content="{% static 'img/icono.jpg' %}"> <!-- Reemplaza con la URL de tu imagen -->
+    <meta property="og:url" content="https://webditech.ddns.net">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{contenido.metadatos.title}}">
+    <meta name="twitter:description" content="{{contenido.metadatos.og_description}}">
+    <meta name="twitter:image" content="{% static 'img/icono.jpg' %}"> <!-- Reemplaza con la URL de tu imagen -->
+    
+
+
     <link rel="shortcut icon" type="image/x-icon" href="{%static 'img/icono2.jpg'%}" />
     <!-- Place favicon.ico in the root directory -->
 
